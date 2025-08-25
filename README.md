@@ -42,7 +42,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src="//s.imgur.com/min/embed.js title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿<img src=http://i.imgur.com/a/creatorverse-VgRBxXG title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
