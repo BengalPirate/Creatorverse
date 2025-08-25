@@ -42,9 +42,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
+👉🏿
+
 ![Demo](src/assets/demo.gif)
 
-👉🏿<img ![Demo](src/assets/demo.gif) title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
