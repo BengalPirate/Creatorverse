@@ -1,0 +1,205 @@
+.App {
+  min-height: 100vh;
+}
+
+.hero-banner {
+  background-image: url('./assets/Earth-from-space-1-64e9a7c.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-banner h1,
+.hero-banner p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.hero-banner p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid var(--pico-border-color);
+  border-radius: var(--pico-border-radius);
+  padding: 1.5rem;
+  background: var(--pico-card-background-color);
+  box-shadow: var(--pico-box-shadow);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--pico-border-radius);
+  margin-bottom: 1rem;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.card-actions .button {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--pico-border-radius);
+  transition: background-color 0.2s;
+}
+
+.button.primary {
+  background-color: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+}
+
+.button.secondary {
+  background-color: var(--pico-secondary-background);
+  color: var(--pico-secondary-inverse);
+}
+
+.button.danger {
+  background-color: var(--pico-del-color);
+  color: white;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.creator-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.creator-details {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.creator-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--pico-border-radius);
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-banner p {
+    font-size: 1rem;
+  }
+
+  .hero-banner {
+    min-height: 250px;
+  }
+}
