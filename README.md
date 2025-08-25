@@ -42,7 +42,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src=https://i.imgur.com/XjnWyko.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿<img ![Creatorverse Demo](https://i.imgur.com/XjnWyko.gif) title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
